@@ -34,9 +34,14 @@ function App() {
   }
 
   const handleRemoveRepo = (id) => {
-    console.log('Removendo registro', id);
 
-    // utilizar filter.
+
+  const index = repos.findIndex(repos => repos.id == id);
+  
+  const removidos =  repos.splice(index, 1);
+
+  console.log(repos);
+  return;
   }
 
 
